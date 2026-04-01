@@ -28,7 +28,11 @@ public class Utils {
         if (profile.isPresent()) {
             return profile.get().getName();
         }
-        else throw new RuntimeException("Player not found!");
+            if (profile.isPresent()) {
+    return profile.get().getName();
+} else {
+    return "OfflinePlayer";
+}
     }
 
     /**
